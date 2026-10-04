@@ -1,0 +1,256 @@
+.App {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/* Navbar simples, com apenas duas opções */
+.navbar {
+  background-color: #1d4ed8;
+  color: #fff;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navbar-titulo {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.navbar-botoes {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.botao-nav {
+  flex: 1;
+  max-width: 220px;
+  padding: 14px 10px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.botao-nav.ativo {
+  background-color: #fff;
+  color: #1d4ed8;
+}
+
+main {
+  padding: 20px 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+/* Campos de formulário grandes e claros */
+.campo-grande {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.campo-grande input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  font-size: 18px;
+  border: 2px solid #9ca3af;
+  border-radius: 8px;
+}
+
+.rotulo-grande {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 4px 0 12px;
+}
+
+/* Grade de botões grandes (categorias, status, filtros) */
+.grade-botoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filtros {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.botao-opcao,
+.botao-filtro {
+  padding: 18px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #2563eb;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #1d4ed8;
+  cursor: pointer;
+}
+
+.botao-opcao.selecionado,
+.botao-filtro.selecionado {
+  background-color: #1d4ed8;
+  color: #fff;
+}
+
+/* Botões de ação principais */
+.botao-primario {
+  width: 100%;
+  padding: 18px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #16a34a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botao-primario:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.botao-secundario {
+  flex: 1;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botao-perigo {
+  flex: 1;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.acoes-detalhe {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Feedback visual grande de sucesso/erro */
+.feedback {
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.feedback-sucesso {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 2px solid #16a34a;
+}
+
+.feedback-erro {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 2px solid #dc2626;
+}
+
+/* Lista de atendimentos em cartões */
+.texto-vazio {
+  font-size: 17px;
+  color: #6b7280;
+}
+
+.lista-cartoes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cartao-atendimento {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 18px;
+  background-color: #fff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.cartao-nome {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.cartao-tipo {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.cartao-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-aguardando {
+  background-color: #fef9c3;
+  color: #92400e;
+}
+
+.status-em-atendimento {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-finalizado {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+/* Tela de detalhes */
+.detalhe-linha {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 17px;
+}
+
+.detalhe-rotulo {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.detalhe-valor {
+  font-weight: 600;
+  text-align: right;
+}
